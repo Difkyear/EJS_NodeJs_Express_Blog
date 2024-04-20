@@ -1,0 +1,44 @@
+<%- include('partials/header.ejs') %>
+<body>
+  <!-- delete blog -->
+  <form class="container-sm col-9" action="/deleteSubmit" method="post">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Delete which blog</label
+      >
+      <input
+        type="Blog_Title"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Blog Title"
+        name="title"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-3">Go Delete</button>
+  </form>
+  <!-- modify blog -->
+  <form class="container-sm col-9" action="/modifySubmit" method="post">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Modify which blog</label
+      >
+      <input
+        type="Blog_Title"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Blog Title"
+        name="title"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-warning mb-3">Go Modify</button>
+  </form>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <%- include('partials/footer.ejs') %>
+</body>
