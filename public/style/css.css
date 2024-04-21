@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Handlee";
+  font-stretch: PERCENTAGE_RANGE_LOW_TO_HIGH; /* Note that font-stretch is a % of normal width */
+  font-style: NORMAL_OR_ITALIC; /* See note below */
+  font-weight: NUMERIC_RANGE_LOW_TO_HIGH;
+  src: url("\Handlee-Regular.ttf") format("woff2");
+}
+body > div.container.w-75.list-group,
+.card-body {
+  font-family: "Handlee";
+}
